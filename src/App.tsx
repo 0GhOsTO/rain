@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import styled from "styled-components";
-
+import RainFunction from "./RainFunction.tsx";
 
 //#TODO:
 //1. Finish conversion from javascript --> react
@@ -9,13 +9,21 @@ import styled from "styled-components";
 //3. Convert that keyframe to raining(VERTICAL)
 
 
-
+const Container = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+`;
 
 const Testing = styled.p<{ color?: string }>`
     display: flex;
     justify-content: center;
     align-items: center;
     color: ${(props) => props.color || "black"};
+`;
+
+const Rain = styled.p`
+    display:flex;
 `;
 
 function App() {
@@ -39,7 +47,11 @@ function App() {
 
   return (
     <>
-      <Testing color = {color}>Check</Testing>
+        <Container>
+            {/*<Testing color = {color}>Check</Testing>*/}
+            <RainFunction/>
+        </Container>
+
     </>
   );
 }
