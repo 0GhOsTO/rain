@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
 import styled from "styled-components";
 
+
 //#TODO:
 //1. Finish conversion from javascript --> react
+//START: 06:38
 //2. Create the keyframe that convert from raining(HORIZONTAL)
 //3. Convert that keyframe to raining(VERTICAL)
 
