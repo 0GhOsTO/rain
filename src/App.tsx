@@ -28,21 +28,21 @@ const Rain = styled.p`
 
 function App() {
   // const [count, setCount] = useState(0)
-    const [color, setColor] = useState<string>("#000");
-
-    useEffect(() => {
-        // Function to generate a random color
-        const getRandomColor = () => {
-            return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-        };
-
-        // Change color every 500 milliseconds (adjust as needed)
-        const intervalId = setInterval(() => {
-            setColor(getRandomColor());
-        }, 500);
-
-        return () => clearInterval(intervalId);
-    }, []);
+  //   const [color, setColor] = useState<string>("#000");
+  //
+  //   useEffect(() => {
+  //       // Function to generate a random color
+  //       const getRandomColor = () => {
+  //           return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  //       };
+  //
+  //       // Change color every 500 milliseconds (adjust as needed)
+  //       const intervalId = setInterval(() => {
+  //           setColor(getRandomColor());
+  //       }, 500);
+  //
+  //       return () => clearInterval(intervalId);
+  //   }, []);
 
 
   return (
